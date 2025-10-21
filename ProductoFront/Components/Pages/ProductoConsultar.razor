@@ -1,0 +1,305 @@
+﻿@page "/ProductoList"
+@rendermode InteractiveServer
+@using ProductoFront.Models
+@using ProductoFront.Services
+@inject ProductoService ProductoService
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Consultar Usuarios</PageTitle>
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">
+                <i class="bi bi-people-fill"></i> Gestionar Usuarios
+            </h3>
+            <button class="btn btn-light btn-sm" @onclick="CargarProductos">
+                <i class="bi bi-arrow-clockwise"></i> Actualizar
+            </button>
+        </div>
+        <div class="card-body">
+            @if (!string.IsNullOrEmpty(mensajeError))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill"></i> @mensajeError
+                    <button type="button" class="btn-close" @onclick="() => mensajeError = string.Empty"></button>
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(mensajeExito))
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill"></i> @mensajeExito
+                    <button type="button" class="btn-close" @onclick="() => mensajeExito = string.Empty"></button>
+                </div>
+            }
+
+            <div class="mb-3">
+                <button class="btn btn-primary" @onclick="IrARegistro">
+                    <i class="bi bi-plus-circle"></i> Nuevo Usuario
+                </button>
+            </div>
+
+            @if (cargando)
+            {
+                <div class="text-center py-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Cargando...</span>
+                    </div>
+                    <p class="mt-2">Cargando Productos...</p>
+                </div>
+            }
+            else if (Productos.Count == 0)
+            {
+                <div class="alert alert-info text-center">
+                    <i class="bi bi-info-circle"></i> No hay Productos registrados
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
+                                <th>Precio</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var Producto in Productos)
+                            {
+                                <tr>
+                                    <td>@Producto.Id</td>
+                                    <td>@Producto.Nombre</td>
+                                    <td>@Producto.Descripcion</td>
+                                    <td>@Producto.Precio</td>
+                                    <td>@Producto.FechaCreacion.ToString("dd/MM/yyyy")</td>
+                                    <td>
+                                        <span class="badge @(Producto.Estado == true ? "bg-info" : "bg-danger")">
+                                            @(Producto.Estado == true ? "Activo" : "Inactivo")
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-warning btn-sm me-2"
+                                                @onclick="() => AbrirModalEditar(Producto)">
+                                            <i class="bi bi-pencil-fill"></i> Modificar
+                                        </button>
+                                        <button class="btn btn-danger btn-sm"
+                                                @onclick="() => EliminarProducto(Producto.Id)">
+                                            <i class="bi bi-trash-fill"></i> Eliminar
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@* Modal de Edición *@
+@if (mostrarModal)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title">
+                        <i class="bi bi-pencil-square"></i> Editar Producto
+                    </h5>
+                    <button type="button" class="btn-close" @onclick="CerrarModal"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="@ProductoEditar" OnValidSubmit="ActualizarProducto">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Nombre:</label>
+                            <InputText class="form-control" @bind-Value="ProductoEditar.Nombre" maxlength="100" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Descripcion:</label>
+                            <InputText class="form-control" @bind-Value="ProductoEditar.Descripcion" maxlength="100" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Precio:</label>
+                            <InputNumber class="form-control" @bind-Value="ProductoEditar.Precio" maxlength="100" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Fecha de Nacimiento:</label>
+                            <InputDate class="form-control" @bind-Value="ProductoEditar.FechaCreacion" />
+                        </div>
+@* 
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Gender:</label>
+                            <InputSelect class="form-select" @bind-Value="ProductoEditar.Estado">
+                                <option value=true>Activo</option>
+                                <option value=false>Inactivo</option>
+                            </InputSelect>
+                        </div>
+ *@
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <InputCheckbox id="Estado"
+                                               class="form-check-input"
+                                               @bind-Value="ProductoEditar.Estado" />
+                                <label class="form-check-label" for="Estado">
+                                    Estado
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary" disabled="@guardando">
+                                @if (guardando)
+                                {
+                                    <span class="spinner-border spinner-border-sm me-2"></span>
+                                    <text>Guardando...</text>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-save"></i>
+                                    <text> Guardar Cambios</text>
+                                }
+                            </button>
+                            <button type="button" class="btn btn-secondary" @onclick="CerrarModal">
+                                <i class="bi bi-x-circle"></i> Cancelar
+                            </button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Producto> Productos = new();
+    private Producto ProductoEditar = new();
+    private int ProductoEditarId = 0;
+    private bool mostrarModal = false;
+    private bool cargando = false;
+    private bool guardando = false;
+    private string mensajeError = string.Empty;
+    private string mensajeExito = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarProductos();
+    }
+
+    private async Task CargarProductos()
+    {
+        cargando = true;
+        mensajeError = string.Empty;
+
+        try
+        {
+            Productos = await ProductoService.ObtenerTodas();
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error al cargar Productos: {ex.Message}";
+        }
+        finally
+        {
+            cargando = false;
+        }
+    }
+
+    private void AbrirModalEditar(Producto Producto)
+    {
+        ProductoEditarId = Producto.Id;
+        ProductoEditar = new Producto
+        {
+            Nombre = Producto.Nombre,
+            FechaCreacion = Producto.FechaCreacion,
+            Estado = Producto.Estado
+        };
+        mostrarModal = true;
+    }
+
+    private void CerrarModal()
+    {
+        mostrarModal = false;
+        ProductoEditar = new();
+        ProductoEditarId = 0;
+    }
+
+    private async Task ActualizarProducto()
+    {
+        mensajeError = string.Empty;
+        mensajeExito = string.Empty;
+        guardando = true;
+
+        try
+        {
+            var resultado = await ProductoService.Actualizar(ProductoEditarId, ProductoEditar);
+
+            if (resultado)
+            {
+                mensajeExito = "Producto actualizado exitosamente";
+                CerrarModal();
+                await CargarProductos();
+            }
+            else
+            {
+                mensajeError = "Error al actualizar el Producto";
+            }
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            guardando = false;
+        }
+    }
+
+    private async Task EliminarProducto(int id)
+    {
+        var confirmado = await JSRuntime.InvokeAsync<bool>("confirm", "¿Está seguro de eliminar este Producto?");
+
+        if (!confirmado)
+        {
+            return;
+        }
+
+        mensajeError = string.Empty;
+        mensajeExito = string.Empty;
+
+        try
+        {
+            var resultado = await ProductoService.Eliminar(id);
+
+            if (resultado)
+            {
+                mensajeExito = "Producto eliminado exitosamente";
+                await CargarProductos();
+            }
+            else
+            {
+                mensajeError = "Error al eliminar el Producto";
+            }
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error: {ex.Message}";
+        }
+    }
+
+    private void IrARegistro()
+    {
+        Navigation.NavigateTo("/ProductoCreate");
+    }
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProducto", "ApiProducto\ApiProducto.csproj", "{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductoFront", "ProductoFront\ProductoFront.csproj", "{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9D309F2-5678-47D1-AA1A-B45FD5E79F44}
+	EndGlobalSection
+EndGlobal
