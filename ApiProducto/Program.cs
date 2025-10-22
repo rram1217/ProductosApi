@@ -26,6 +26,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers().DisableAntiforgery();
 
 app.Run();

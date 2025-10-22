@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "C:\\repos\\ApiProducto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\components\\pages\\productocrear.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\components\\pages\\productocrear.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|c:\\repos\\apiproducto\\apiproducto\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|solutionrelative:apiproducto\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\components\\pages\\productoconsultar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\components\\pages\\productoconsultar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\components\\pages\\productocrear.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\components\\pages\\productocrear.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\models\\productorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\models\\productorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|c:\\repos\\apiproducto\\apiproducto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|solutionrelative:apiproducto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|c:\\repos\\apiproducto\\apiproducto\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|solutionrelative:apiproducto\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -31,16 +55,8 @@
       "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|c:\\repos\\apiproducto\\productofront\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0DACC10E-D24A-4DAE-A2EA-61852DBEB4E6}|ProductoFront\\ProductoFront.csproj|solutionrelative:productofront\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|c:\\repos\\apiproducto\\apiproducto\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|solutionrelative:apiproducto\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|c:\\repos\\apiproducto\\apiproducto\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|solutionrelative:apiproducto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|c:\\repos\\apiproducto\\apiproducto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|solutionrelative:apiproducto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|c:\\repos\\apiproducto\\apiproducto\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EBE3CBED-50B9-41EB-AADD-964D59A3FC1A}|ApiProducto\\ApiProducto.csproj|solutionrelative:apiproducto\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -70,102 +82,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Program.cs",
               "RelativeDocumentMoniker": "ProductoFront\\Program.cs",
               "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Program.cs",
               "RelativeToolTip": "ProductoFront\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T22:17:04.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Models\\Producto.cs",
               "RelativeDocumentMoniker": "ProductoFront\\Models\\Producto.cs",
               "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Models\\Producto.cs",
               "RelativeToolTip": "ProductoFront\\Models\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T21:45:14.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductoConsultar.razor",
-              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
-              "RelativeDocumentMoniker": "ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
-              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
-              "RelativeToolTip": "ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-21T21:44:28.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "ProductoFront\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "ProductoFront\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-21T21:43:20.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ProductoCrear.razor",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Pages\\ProductoCrear.razor",
               "RelativeDocumentMoniker": "ProductoFront\\Components\\Pages\\ProductoCrear.razor",
               "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Pages\\ProductoCrear.razor",
               "RelativeToolTip": "ProductoFront\\Components\\Pages\\ProductoCrear.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwKsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-21T21:42:56.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\appsettings.json",
-              "RelativeDocumentMoniker": "ProductoFront\\appsettings.json",
-              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\appsettings.json",
-              "RelativeToolTip": "ProductoFront\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T21:41:33.504Z",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\Program.cs",
+              "RelativeDocumentMoniker": "ApiProducto\\Program.cs",
+              "ToolTip": "C:\\repos\\ApiProducto\\ApiProducto\\Program.cs",
+              "RelativeToolTip": "ApiProducto\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:56:32.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "ApiProducto\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\repos\\ApiProducto\\ApiProducto\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "ApiProducto\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:44:54.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProductoService.cs",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Services\\ProductoService.cs",
               "RelativeDocumentMoniker": "ProductoFront\\Services\\ProductoService.cs",
               "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Services\\ProductoService.cs",
               "RelativeToolTip": "ProductoFront\\Services\\ProductoService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T21:48:56.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "ProductoConsultar.razor",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
+              "RelativeDocumentMoniker": "ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
+              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
+              "RelativeToolTip": "ProductoFront\\Components\\Pages\\ProductoConsultar.razor",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwBYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T21:44:28.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "ProductoFront\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "ProductoFront\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T21:43:20.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductoRequest.cs",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Models\\ProductoRequest.cs",
+              "RelativeDocumentMoniker": "ProductoFront\\Models\\ProductoRequest.cs",
+              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Models\\ProductoRequest.cs",
+              "RelativeToolTip": "ProductoFront\\Models\\ProductoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T23:45:29.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ProductoFront\\appsettings.Development.json",
@@ -173,12 +211,49 @@
               "RelativeToolTip": "ProductoFront\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T22:18:16.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T22:18:16.419Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "ProductoFront\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "ProductoFront\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T23:19:16.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "ApiProducto\\Models\\Producto.cs",
+              "ToolTip": "C:\\repos\\ApiProducto\\ApiProducto\\Models\\Producto.cs",
+              "RelativeToolTip": "ApiProducto\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T23:29:26.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductoFront\\appsettings.json",
+              "ToolTip": "C:\\repos\\ApiProducto\\ProductoFront\\appsettings.json",
+              "RelativeToolTip": "ProductoFront\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T21:41:33.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ProductoFront\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "ProductoFront\\Components\\Pages\\Home.razor",
@@ -186,12 +261,11 @@
               "RelativeToolTip": "ProductoFront\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-21T21:40:57.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T21:40:57.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\appsettings.json",
               "RelativeDocumentMoniker": "ApiProducto\\appsettings.json",
@@ -199,25 +273,11 @@
               "RelativeToolTip": "ApiProducto\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T20:59:48.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T20:59:48.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\Program.cs",
-              "RelativeDocumentMoniker": "ApiProducto\\Program.cs",
-              "ToolTip": "C:\\repos\\ApiProducto\\ApiProducto\\Program.cs",
-              "RelativeToolTip": "ApiProducto\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T20:56:32.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\Database\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ApiProducto\\Database\\ApplicationDbContext.cs",
@@ -225,25 +285,11 @@
               "RelativeToolTip": "ApiProducto\\Database\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAQwAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T20:48:18.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T20:48:18.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "ApiProducto\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\repos\\ApiProducto\\ApiProducto\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "ApiProducto\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T20:44:54.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ApiProducto\\appsettings.Development.json",
@@ -251,12 +297,11 @@
               "RelativeToolTip": "ApiProducto\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T21:22:20.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T21:22:20.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\repos\\ApiProducto\\ApiProducto\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ApiProducto\\Properties\\launchSettings.json",
@@ -264,8 +309,7 @@
               "RelativeToolTip": "ApiProducto\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T21:22:13.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T21:22:13.323Z"
             }
           ]
         }

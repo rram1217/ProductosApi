@@ -1,110 +1,118 @@
 ﻿@page "/ProductoCreate"
-@using ProductoFront.Services
+@rendermode InteractiveServer
 @using ProductoFront.Models
+@using ProductoFront.Services
 @inject ProductoService ProductoService
 @inject NavigationManager Navigation
 
-<PageTitle>Crear Producto</PageTitle>
+<PageTitle>Registrar Producto</PageTitle>
 
 <div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card shadow">
-                <div class="card-header bg-primary text-white">
-                    <h3 class="mb-0">
-                        <i class="bi bi-plus-circle"></i> Crear Nuevo Producto
-                    </h3>
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">
+                <i class="bi bi-person-plus-fill"></i> Registrar Nuevo Producto
+            </h3>
+        </div>
+        <div class="card-body">
+            @if (!string.IsNullOrEmpty(mensajeError))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill"></i> @mensajeError
+                    <button type="button" class="btn-close" @onclick="() => mensajeError = string.Empty"></button>
                 </div>
-                <div class="card-body">
-                    <EditForm Model="@producto" OnValidSubmit="GuardarProducto">
-                        <DataAnnotationsValidator />
+            }
 
-                        <div class="mb-3">
-                            <label for="Nombre" class="form-label fw-bold">Nombre</label>
-                            <InputText id="nombre"
-                                       class="form-control"
-                                       @bind-Value="producto.Nombre"
-                                       placeholder="Ingrese el Nombre de la Producto" />
-                            <ValidationMessage For="@(() => producto.Nombre)" class="text-danger" />
-                        </div>
+            @if (!string.IsNullOrEmpty(mensajeExito))
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill"></i> @mensajeExito
+                    <button type="button" class="btn-close" @onclick="() => mensajeExito = string.Empty"></button>
+                </div>
+            }
 
-                        <div class="mb-3">
-                            <label for="Descripcion" class="form-label fw-bold">Descripcion</label>
-                            <InputText id="descripcion"
-                                       class="form-control"
-                                       @bind-Value="producto.Descripcion"
-                                       placeholder="Ingrese el Nombre de la Producto" />
-                            <ValidationMessage For="@(() => producto.Descripcion)" class="text-danger" />
-                        </div>
+            <EditForm Model="@nuevoProducto" OnValidSubmit="GuardarProducto">
+                <DataAnnotationsValidator />
 
-                        <div class="mb-3">
-                            <label for="Precio" class="form-label fw-bold">Precio</label>
-                            <InputNumber id="precio"
-                                       class="form-control"
-                                       @bind-Value="producto.Precio"
-                                       placeholder="Ingrese el precio del Producto" />
-                            <ValidationMessage For="@(() => producto.Precio)" class="text-danger" />
-                        </div>
+                <div class="mb-3">
+                    <label for="Nombre" class="form-label fw-bold">
+                        <i class="bi bi-person"></i> Nombre:
+                    </label>
+                    <InputText id="Nombre"
+                               class="form-control"
+                               @bind-Value="nuevoProducto.Nombre"
+                               placeholder="Ingrese el Nombre completo"
+                               maxlength="100" />
+                    <ValidationMessage For="@(() => nuevoProducto.Nombre)" />
+                </div>
 
-                        @* <input type="hidden" name="FechaCreacion" value="@producto.Id" /> *@
-                        <input type="hidden" name="FechaCreacion" value="@producto.FechaCreacion" />
+                <div class="mb-3">
+                    <label for="Descripcion" class="form-label fw-bold">
+                        <i class="bi bi-person"></i> Descripcion:
+                    </label>
+                    <InputText id="Descripcion"
+                               class="form-control"
+                               @bind-Value="nuevoProducto.Descripcion"
+                               placeholder="Ingrese la Descripcion"
+                               maxlength="100" />
+                    <ValidationMessage For="@(() => nuevoProducto.Descripcion)" />
+                </div>
 
-@* 
-                        <div class="mb-3">
-                            <label for="Descripcion" class="form-label fw-bold">Descripción</label>
-                            <InputTexProducto id="descripcion"
-                                           class="form-control"
-                                           rows="5"
-                                           @bind-Value="producto.Descripcion"
-                                           placeholder="Ingrese la descripción de la Producto" />
-                            <ValidationMessage For="@(() => producto.Descripcion)" class="text-danger" />
-                        </div>
- *@
+                <div class="mb-3">
+                    <label for="Precio" class="form-label fw-bold">
+                        <i class="bi bi-person"></i> Precio:
+                    </label>
+                    <InputNumber id="Precio"
+                               class="form-control"
+                               @bind-Value="nuevoProducto.Precio"
+                               placeholder="Ingrese el Precio"
+                               TValue="decimal"
+                               maxlength="100" />
+                    <ValidationMessage For="@(() => nuevoProducto.Precio)" />
+                </div>
 
-                        <div class="mb-4">
-                            <div class="form-check">
-                                <InputCheckbox id="Estado"
-                                               class="form-check-input"
-                                               @bind-Value="producto.Estado" />
-                                <label class="form-check-label" for="Estado">
-                                    Estado
-                                </label>
-                            </div>
-                        </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <InputCheckbox id="Estado"
+                                       class="form-check-input"
+                                       @bind-Value="nuevoProducto.Estado" />
+                        <label class="form-check-label" for="Estado">
+                            Estado
+                        </label>
+                    </div>
+                </div>
 
-                        @if (mostrarMensaje)
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary" disabled="@guardando">
+                        @if (guardando)
                         {
-                            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                <i class="bi bi-check-circle"></i> ¡Producto creada exitosamente!
-                                <button type="button" class="btn-close" @onclick="@(() => mostrarMensaje = false)"></button>
-                            </div>
+                            <span class="spinner-border spinner-border-sm me-2"></span>
+                            <text>Guardando...</text>
                         }
-
-                        <div class="d-flex gap-2">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="bi bi-save"></i> Guardar Producto
-                            </button>
-                            <button type="button" class="btn btn-secondary" @onclick="IrALista">
-                                <i class="bi bi-list-ul"></i> Ver Lista de Productos
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary" @onclick="LimpiarFormulario">
-                                <i class="bi bi-x-circle"></i> Limpiar
-                            </button>
-                        </div>
-                    </EditForm>
+                        else
+                        {
+                            <i class="bi bi-save"></i>
+                            <text> Guardar Producto</text>
+                        }
+                    </button>
+                    <button type="button" class="btn btn-secondary" @onclick="LimpiarFormulario">
+                        <i class="bi bi-x-circle"></i> Limpiar
+                    </button>
+                    <button type="button" class="btn btn-info" @onclick="IrAConsulta">
+                        <i class="bi bi-list-ul"></i> Ver Productos
+                    </button>
                 </div>
-            </div>
+            </EditForm>
         </div>
     </div>
 </div>
 
 @code {
-    private Producto producto = new();
-    private bool mostrarMensaje = false;
+    private ProductoRequest nuevoProducto = new();
     private string mensajeError = string.Empty;
     private string mensajeExito = string.Empty;
     private bool guardando = false;
-
 
     private async Task GuardarProducto()
     {
@@ -112,21 +120,21 @@
         mensajeExito = string.Empty;
 
         // Validaciones
-        if (string.IsNullOrWhiteSpace(producto.Nombre))
+        if (string.IsNullOrWhiteSpace(nuevoProducto.Nombre))
         {
             mensajeError = "El Nombre es requerido";
             return;
         }
 
-        if (string.IsNullOrWhiteSpace(producto.Descripcion))
+        if (string.IsNullOrWhiteSpace(nuevoProducto.Descripcion))
         {
             mensajeError = "La Descripcion es requerida";
             return;
         }
 
-        if (producto.Precio<0)
+        if (nuevoProducto.FechaCreacion > DateTime.Today)
         {
-            mensajeError = "El precio es requerido";
+            mensajeError = "La fecha de nacimiento no puede ser futura";
             return;
         }
 
@@ -134,16 +142,16 @@
 
         try
         {
-            var resultado = await ProductoService.Crear(producto);
+            var resultado = await ProductoService.Crear(nuevoProducto);
 
             if (resultado)
             {
-                mensajeExito = "Producto guardada exitosamente";
+                mensajeExito = "Producto guardado exitosamente";
                 LimpiarFormulario();
             }
             else
             {
-                mensajeError = "Error al guardar la Producto. Por favor intente nuevamente.";
+                mensajeError = "Error al guardar el Producto. Por favor intente nuevamente.";
             }
         }
         catch (Exception ex)
@@ -158,12 +166,11 @@
 
     private void LimpiarFormulario()
     {
-        producto = new Producto();
-        mostrarMensaje = false;
+        nuevoProducto = new ProductoRequest { FechaCreacion = DateTime.Today };
     }
 
-    private void IrALista()
+    private void IrAConsulta()
     {
-        Navigation.NavigateTo("/productoList");
+        Navigation.NavigateTo("/ProductoList");
     }
 }

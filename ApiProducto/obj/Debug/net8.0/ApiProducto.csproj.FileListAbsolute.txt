@@ -87,3 +87,4 @@ C:\repos\ApiProducto\ApiProducto\obj\Debug\net8.0\refint\ApiProducto.dll
 C:\repos\ApiProducto\ApiProducto\obj\Debug\net8.0\ApiProducto.pdb
 C:\repos\ApiProducto\ApiProducto\obj\Debug\net8.0\ApiProducto.genruntimeconfig.cache
 C:\repos\ApiProducto\ApiProducto\obj\Debug\net8.0\ref\ApiProducto.dll
+C:\repos\ApiProducto\ApiProducto\obj\Debug\net8.0\ApiProducto.sourcelink.json

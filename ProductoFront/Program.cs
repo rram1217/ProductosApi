@@ -16,6 +16,7 @@ builder.Services.AddScoped(sp =>
     return new HttpClient { BaseAddress = new Uri(apiUrl) };
 });
 
+builder.Services.AddAntiforgery(o => o.HeaderName = "RequestVerificationToken");
 
 var app = builder.Build();
 

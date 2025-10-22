@@ -30,3 +30,4 @@ C:\repos\ApiProducto\ProductoFront\obj\Debug\net8.0\refint\ProductoFront.dll
 C:\repos\ApiProducto\ProductoFront\obj\Debug\net8.0\ProductoFront.pdb
 C:\repos\ApiProducto\ProductoFront\obj\Debug\net8.0\ProductoFront.genruntimeconfig.cache
 C:\repos\ApiProducto\ProductoFront\obj\Debug\net8.0\ref\ProductoFront.dll
+C:\repos\ApiProducto\ProductoFront\obj\Debug\net8.0\ProductoFront.sourcelink.json

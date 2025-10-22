@@ -43,7 +43,7 @@ namespace ProductoFront.Services
             }
         }
 
-        public async Task<bool> Crear(Producto Producto)
+        public async Task<bool> Crear(ProductoRequest Producto)
         {
             try
             {

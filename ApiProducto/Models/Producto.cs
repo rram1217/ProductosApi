@@ -13,7 +13,7 @@ namespace ApiProducto.Models
         [Required]
         public string Descripcion { get; set; }
         [Required]
-        public long Precio { get; set; }
+        public decimal Precio { get; set; }
         public DateTime FechaCreacion { get; set; }
         public bool Estado { get; set; }
     }

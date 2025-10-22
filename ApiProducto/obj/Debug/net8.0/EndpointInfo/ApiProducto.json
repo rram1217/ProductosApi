@@ -154,8 +154,8 @@
             "type": "string"
           },
           "precio": {
-            "type": "integer",
-            "format": "int64"
+            "type": "number",
+            "format": "double"
           },
           "fechaCreacion": {
             "type": "string",
